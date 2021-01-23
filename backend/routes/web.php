@@ -19,3 +19,5 @@ Route::get('/', function () {
 
 // helloアクションへのルーティング
 Route::get('hello','HelloController@index');
+// helloビューへのルーティング
+Route::get('hello/view','HelloController@view');
