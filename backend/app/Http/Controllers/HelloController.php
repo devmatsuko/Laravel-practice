@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// Bookモデルをインポート
+use App\Models\Book;
 
 class HelloController extends Controller
 {
@@ -22,5 +24,15 @@ class HelloController extends Controller
 
         // テンプレートを呼び出す
         return view('hello.view', $data);
+    }
+
+    // アクションメソッドを定義
+    public function list()
+    {
+        // booksテーブルから全行を取得する
+        $data = [
+            'records' => Book::all()
+        ];
+        return view('hello.list', $data);
     }
 }
