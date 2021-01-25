@@ -14,4 +14,28 @@ class ViewController extends Controller
             <p>WINGSへようこそ</p>'
         ]);
     }
+
+    // 基本ディレクティブ
+    public function if()
+    {
+        return view('view.if',[
+            'random' => random_int(0,100)
+        ]);
+    }
+
+    // unless
+    public function unless()
+    {
+        return view('view.unless',[
+            'random' => random_int(0,100)
+        ]);
+    }
+
+    // isset
+    public function isset()
+    {
+        return view('view.isset',[
+            'msg' => 'こんにちは、世界！'
+        ]);
+    }
 }

@@ -26,3 +26,9 @@ Route::get('hello/list','HelloController@list');
 
 // view/viewビューへのルーティング
 Route::get('view/escape','ViewController@escape');
+// view/ifビューへのルーティング
+Route::get('view/if','ViewController@if');
+// view/unlessビューへのルーティング
+Route::get('view/unless','ViewController@unless');
+// view/issetビューへのルーティング
+Route::get('view/isset','ViewController@isset');
