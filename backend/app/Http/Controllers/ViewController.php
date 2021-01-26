@@ -38,4 +38,12 @@ class ViewController extends Controller
             'msg' => 'こんにちは、世界！'
         ]);
     }
+
+    // テンプレート確認用
+    public function master()
+    {
+        return view('view.master',[
+            'msg' => 'こんにちは、世界！'
+        ]);
+    }
 }
