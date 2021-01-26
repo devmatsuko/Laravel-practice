@@ -46,4 +46,10 @@ class ViewController extends Controller
             'msg' => 'こんにちは、世界！'
         ]);
     }
+
+    // コンポーネント確認用
+    public function comp()
+    {
+        return view('view.comp');
+    }
 }

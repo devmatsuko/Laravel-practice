@@ -34,3 +34,5 @@ Route::get('view/unless','ViewController@unless');
 Route::get('view/isset','ViewController@isset');
 // view/masterビューへのルーティング
 Route::get('view/master','ViewController@master');
+// view/compビューへのルーティング
+Route::get('view/comp','ViewController@comp');
