@@ -36,3 +36,5 @@ Route::get('view/isset','ViewController@isset');
 Route::get('view/master','ViewController@master');
 // view/compビューへのルーティング
 Route::get('view/comp','ViewController@comp');
+// view/listビューへのルーティング
+Route::get('view/list','ViewController@list');

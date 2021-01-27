@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// Bookモデルをインポート
+use App\Models\Book;
 
 class ViewController extends Controller
 {
@@ -51,5 +53,15 @@ class ViewController extends Controller
     public function comp()
     {
         return view('view.comp');
+    }
+
+    // アクションメソッドを定義
+    public function list()
+    {
+        // booksテーブルから全行を取得する
+        $data = [
+            'records' => Book::all()
+        ];
+        return view('view.list', $data);
     }
 }
